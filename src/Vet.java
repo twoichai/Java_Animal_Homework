@@ -2,6 +2,21 @@ public class Vet {
     private String name;
 
     //ToDo:
-    // void treatment(Animal animal)
-    // standart stuff
+    // public void treatment(Animal animal){
+    //    System.out.println("The " animal.);
+    // }
+
+    // constructor
+    public Vet(String name) {
+        this.name = name;
+    }
+
+    // getter and setter
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 }

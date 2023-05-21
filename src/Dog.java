@@ -2,20 +2,21 @@ public class Dog extends Animal {
     private String name;
 
 
-    // Constructor
-    public Dog() {
-
-    }
     // Override the Animal methods
-
     public void eat() {
-        System.out.println("chawk chawk");
+        System.out.println("Yummy yum");
     }
-
     public void sleep() {
-        System.out.println("ZZZ");
+        System.out.println("Pshht");
     }
-    // Getter and setter
+    // constructor
+    public Dog(){}
+
+    public Dog(String ration, String color, int weight, String name){
+        super(ration,color,weight);
+        this.name = name;
+    }
+    // getter & setter
 
     public String getName() {
         return name;
@@ -23,5 +24,13 @@ public class Dog extends Animal {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        return "name of dog: " + name +
+                ", food: " + getRation() +
+                ", color: " + getColor() +
+                ", weight: " + getWeight();
     }
 }

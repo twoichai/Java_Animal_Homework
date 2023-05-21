@@ -4,12 +4,15 @@ public class Main {
         Animal basicAnimal = new Animal();
         basicAnimal.eat();
 
-        Dog basicDog = new Dog();
+        Dog basicDog = new Dog("meat", "orange", 5, "John");
         basicDog.eat();
         basicDog.sleep();
 
         Cat basicCat = new Cat("fish", "black", 2, "Peter");
         basicCat.sleep();
+        System.out.println(basicCat.getColor());
+
+        System.out.println(basicCat.toString());
     }
 }
 // ToDo: why I don't need "Override" for the methods?

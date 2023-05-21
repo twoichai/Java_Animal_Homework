@@ -13,7 +13,7 @@ public class Cat extends Animal {
     public Cat(){}
 
     public Cat(String ration, String color, int weight, String name){
-        super();
+        super(ration,color,weight);
         this.name = name;
     }
     // getter & setter
@@ -28,8 +28,9 @@ public class Cat extends Animal {
 
     @Override
     public String toString() {
-        return "Cat{" +
-                "name='" + name + '\'' +
-                '}';
+        return "name of cat: " + name +
+                ", food: " + getRation() +
+                ", color: " + getColor() +
+                ", weight: " + getWeight();
     }
 }

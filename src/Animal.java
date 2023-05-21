@@ -1,21 +1,19 @@
-public class Animal {
+// parent class
 
+public class Animal {
     //vars
     private String ration;
     private String color;
     private int weight;
 
-
     // constructors
     public Animal() {
-
     }
 
     public Animal(String ration, String color, int weight) {
         this.ration = ration;
         this.color = color;
         this.weight = weight;
-
     }
 
     // methods from the task
@@ -60,11 +58,9 @@ public class Animal {
     // toString
     @Override
     public String toString() {
-        return "Animal{" +
-                "ration='" + ration + '\'' +
-                ", color='" + color + '\'' +
-                ", weight=" + weight +
-                '}';
+        return  "food: " + getRation() +
+                ", color: " + getColor() +
+                ", weight: " + getWeight();
     }
 
 }
