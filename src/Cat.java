@@ -3,9 +3,11 @@ public class Cat extends Animal {
 
 
     // Override the Animal methods
+    @Override
     public void eat() {
         System.out.println("Yummy yum");
     }
+    @Override
     public void sleep() {
         System.out.println("Pshht");
     }
