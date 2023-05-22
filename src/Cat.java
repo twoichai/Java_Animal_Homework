@@ -8,7 +8,6 @@ public class Cat extends Animal {
         super(ration,color,weight);
         this.name = name;
     }
-    
     // Override the Animal methods
     @Override
     public void eat() {
