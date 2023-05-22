@@ -15,4 +15,3 @@ public class Main {
         System.out.println(basicCat.toString());
     }
 }
-// ToDo: why I don't need "Override" for the methods?
