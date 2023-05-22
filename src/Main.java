@@ -10,6 +10,10 @@ public class Main {
 
         Cat basicCat = new Cat("fish", "black", 2, "Peter");
         basicCat.sleep();
+
+        Vet dr1 = new Vet("Dr. Vetvet");
+        dr1.treatment(basicDog);
+
         System.out.println(basicCat.getColor());
 
         System.out.println(basicCat.toString());

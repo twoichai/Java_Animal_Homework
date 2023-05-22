@@ -6,9 +6,9 @@ public class Vet {
         this.name = name;
     }
     //ToDo:
-    // public void treatment(Animal animal){
-    //    System.out.println("The " animal.);
-    // }
+    public void treatment(Animal animal){
+        System.out.println("Healed");
+    }
 
     // getter and setter
     public String getName() {
