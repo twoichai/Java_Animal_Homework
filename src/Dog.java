@@ -1,7 +1,13 @@
 public class Dog extends Animal {
     private String name;
 
+    // constructor
+    public Dog(){}
 
+    public Dog(String ration, String color, int weight, String name){
+        super(ration,color,weight);
+        this.name = name;
+    }
     // Override the Animal methods
     @Override
     public void eat() {
@@ -10,13 +16,6 @@ public class Dog extends Animal {
     @Override
     public void sleep() {
         System.out.println("Pshht");
-    }
-    // constructor
-    public Dog(){}
-
-    public Dog(String ration, String color, int weight, String name){
-        super(ration,color,weight);
-        this.name = name;
     }
     // getter & setter
 
