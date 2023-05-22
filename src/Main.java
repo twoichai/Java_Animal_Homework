@@ -13,7 +13,7 @@ public class Main {
 
         Vet dr1 = new Vet("Dr. Vetvet");
         dr1.treatment(basicDog);
-
+        System.out.println();
         System.out.println(basicCat.getColor());
 
         System.out.println(basicCat.toString());
