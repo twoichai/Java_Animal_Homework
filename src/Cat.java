@@ -18,6 +18,16 @@ public class Cat extends Animal {
         super(ration,color,weight);
         this.name = name;
     }
+    // Override the Animal methods
+    @Override
+    public void eat() {
+        System.out.println("Yummy yum");
+    }
+    @Override
+    public void sleep() {
+        System.out.println("Pshht");
+    }
+    
     // getter & setter
 
     public String getName() {
